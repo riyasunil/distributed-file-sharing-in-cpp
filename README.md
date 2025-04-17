@@ -135,3 +135,22 @@ make
 ./client.out [ServerIP] [ServerPort]
 ```
 
+
+#### Compile the system:
+```
+g++ -o file_sharing main.cpp server.cpp client.cpp auth.cpp utils.cpp -std=c++17 -I./include -lboost_system
+```
+
+#### Run the system:
+```
+./file_sharing
+```
+
+#### Kill processes:
+```
+❯ fuser 1234/tcp
+1234/tcp:            15113
+
+fs on  master [!?] 
+❯ kill -9 15113
+```

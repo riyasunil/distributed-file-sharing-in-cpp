@@ -1,6 +1,3 @@
-
-// Online IDE - Code Editor, Compiler, Interpreter
-
 #include<iostream>
 #include <unordered_map>
 #include <string>
