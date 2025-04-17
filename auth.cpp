@@ -35,6 +35,7 @@ bool validate_user(const string& userID,const string& password){
     string uid = trim(userID);
     string pass = trim(password);
     auto user_exists = auth_keys.find(uid);
+    // std::cout << user_exists->second <<std::endl;
     if (user_exists != auth_keys.end()) {
     std::cout << "User ID: " << user_exists->first << std::endl;
     std::cout << "Password: " << user_exists->second << std::endl;

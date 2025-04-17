@@ -19,7 +19,7 @@ void start_client() {
         tcp::socket socket(io_context);
         
         // Connection
-        socket.connect(tcp::endpoint(boost::asio::ip::make_address("127.0.0.0"), 1234));
+        socket.connect(tcp::endpoint(boost::asio::ip::make_address("127.0.0.1"), 1234));
         
         string user_id, password;
         cout << "Enter User ID: ";
